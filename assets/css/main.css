@@ -20,8 +20,12 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #008374;
-  --color-secondary: #f85a40;
+  /* --color-primary: #008374; */
+  /* --color-primary: #9f2c83; */
+  --color-primary: #000;
+  /* --color-secondary: #f85a40; */
+  --color-secondary: #30078b;
+  --color-sub-secondary: #de5045;
 }
 
 /* Smooth scroll behavior */
@@ -65,7 +69,13 @@ section {
 }
 
 .sections-bg {
-  background-color: #f6f6f6;
+  background-color: #262262;
+  color: #ffffff;
+}
+
+.sections-secondary-bg {
+  background-color: #a12487;
+  color: #fff;
 }
 
 .section-header {
@@ -92,6 +102,11 @@ section {
   right: 0;
   bottom: 0;
   margin: auto;
+}
+
+.sections-bg .section-header h2:after,
+.sections-secondary-bg .section-header h2:after {
+  background: #ffffff;
 }
 
 .section-header p {
@@ -180,7 +195,8 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(248, 90, 64, 0.8);
+  /* background: var(--color-sub-secondary); */
+  background: #a12487;
   color: #fff;
 }
 
@@ -238,7 +254,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #00796b;
+  background: #30078b;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -304,7 +320,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 70px;
   margin-right: 6px;
 }
 
@@ -383,7 +399,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-secondary);
+    background-color: var(--color-sub-secondary);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -660,7 +676,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: radial-gradient(var(--color-primary) 50%, #de504585 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -681,9 +697,9 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
-  top: -15%;
-  left: -15%;
+  border: 5px solid #30078b85;
+  top: -13%;
+  left: -13%;
   background: rgba(198, 16, 0, 0);
 }
 
@@ -1072,6 +1088,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 15px auto 15px auto;
+  color: #000;
 }
 
 .testimonials .swiper-pagination {
@@ -1082,12 +1099,14 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: rgba(255, 255, 255, 0.2);
   opacity: 1;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  background-color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -1480,7 +1499,7 @@ section {
   height: 86px;
   width: 86px;
   border-radius: 50%;
-  background: #87c1bb;
+  background: #26226270;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
@@ -1491,7 +1510,7 @@ section {
   height: 102px;
   width: 102px;
   border-radius: 50%;
-  background: #d2eeeb;
+  background: #26226250;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-2px);
 }
@@ -1720,7 +1739,7 @@ section {
 
 .contact .info-item {
   width: 100%;
-  background-color: #009282;
+  background-color: #a12487;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -1870,7 +1889,12 @@ section {
 .hero {
   width: 100%;
   position: relative;
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
   padding: 60px 0 0 0;
 }
 
@@ -1903,7 +1927,8 @@ section {
   border-radius: 50px;
   transition: 0.3s;
   color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: #000;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -1963,7 +1988,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #008d7d;
+  background: #262262;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -1977,6 +2002,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+  color: #fff;
 }
 
 .hero .icon-box .title a {
@@ -1991,11 +2017,12 @@ section {
   transition: all 0.3s ease-in-out;
   font-size: 48px;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.6);
+  /* color: rgba(255, 255, 255, 0.6); */
+  color: #fff;
 }
 
 .hero .icon-box:hover {
-  background: #009786;
+  background: #a12487;
 }
 
 .hero .icon-box:hover .title a,
@@ -2666,4 +2693,95 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+
+
+
+
+.hand{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 250px;
+}
+
+
+.card{
+  margin-top:-10px;
+  position:absolute;
+  width:200px;
+  height:300px;
+  border:1px solid black;
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:white;
+  
+  -webkit-box-shadow: -10px 0px 30px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px 0px 30px -6px rgba(0,0,0,0.75);
+  box-shadow: -10px 0px 30px -6px rgba(0,0,0,0.75);
+}
+
+.topLeft{
+  align-self:flex-start;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.topLeft p{
+  margin:0;
+  padding:0;
+  font-size:36px;
+}
+
+.bottomRight{
+  -webkit-transform:rotateX(180deg);
+  align-self:flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.bottomRight p{
+  margin:0;
+  padding:0;
+  font-size:36px;
+  
+}
+
+.suit{
+  padding:0;
+  margin:0;
+  font-size:100px;
+}
+
+.red{
+  color:red;
+}
+
+.hearts{
+  transform:rotate(-40deg);
+  margin-left:-100px;
+}
+
+.diams{
+  transform:rotate(0deg);
+  margin-left:0px;
+  margin-top:10px;
+}
+
+.clubs{
+  transform:rotate(20deg);
+  margin-left:40px;
+  margin-top:50px;
+}
+
+.spades{
+  transform:rotate(-20deg);
+  margin-left:-50px;
 }
