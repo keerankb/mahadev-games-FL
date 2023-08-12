@@ -792,7 +792,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 .stats-counter .stats-item {
@@ -1465,7 +1465,7 @@ section {
 # Pricing Section
 --------------------------------------------------------------*/
 .pricing .pricing-item {
-  padding: 60px 40px;
+  padding: 60px 25px;
   box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
   background: #fff;
   height: 100%;
@@ -1670,7 +1670,7 @@ section {
 }
 
 .faq .accordion-body {
-  padding: 0 40px 30px 45px;
+  padding: 0 40px 20px 37px;
   border: 0;
   border-radius: 10px;
   background: #fff;
@@ -2706,7 +2706,7 @@ section {
 
 
 
-
+/* Playing cards graphics */
 .hand{
   display:flex;
   justify-content:center;
@@ -2793,21 +2793,35 @@ section {
   transform:rotate(-20deg);
   margin-left:-50px;
 }
+/* Playing cards graphics */
 
 .whatsapp-icon {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 99999;
 }
 
 .steps-icon {
   font-size: 44px;
 }
 
+.toolbar {
+  display: none !important;
+}
+
+.mahadev-name-logo-about {
+  width: 425px;
+}
+
 /* Media Queries */
-@media only screen and (min-width: 360px) and (max-width: 767px)  {
+@media only screen and (min-width: 340px) and (max-width: 767px)  {
   #about, #stats-counter, #gallery, #pricing, #timeTable, #testimonials, #faq, #contact, #footer {
     padding: 40px 15px;
+  }
+
+  #about .section-header {
+    padding-bottom: 0;
   }
 
   .section-header h2 {
@@ -2840,8 +2854,21 @@ section {
     width: 80%;
   }
 
-  .faq .accordion-button {
-    font-size: 16px;
+  .faq .content h3 {
+    font-size: 28px;
+  }
+
+  .faq .accordion-button,
+  .faq .accordion-button .num {
+    font-size: 14px;
+  }
+
+  .contact .info-item {
+    padding: 20px 10px;
+  }
+
+  .contact .info-item i {
+    margin-right: 10px;
   }
 }
 
@@ -2855,7 +2882,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 990px) {
+@media only screen and (min-width: 340px) and (max-width: 990px) {
   .contact .info-container {
     border-radius: 10px;
   }
@@ -2863,11 +2890,19 @@ section {
   .contact .php-email-form {
     border-radius: 10px;
   }
+
+  .about-us-text-wrapper {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
   .step-counter {
     font-size: 19px;
+  }
+
+  .mahadev-name-logo-about {
+    width: 400px;
   }
 }
 
@@ -2878,5 +2913,14 @@ section {
 
   .stats-item h4 strong {
     font-size: 17px;
+  }
+
+  .pricing .pricing-item {
+    padding: 30px 13px;
+    font-size: 15px;
+  }
+
+  .mahadev-name-logo-about {
+    width: 300px;
   }
 }
