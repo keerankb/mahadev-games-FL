@@ -214,11 +214,12 @@ section {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: #fff url('/assets/img/Game-loading.gif') no-repeat center;
+  /* background: #fff url('/assets/img/Game-loading.gif') no-repeat center; */
+  background: #fff;
   transition: all 0.6s ease-out;
 }
 
-/* #preloader:before {
+#preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -229,7 +230,7 @@ section {
   width: 60px;
   height: 60px;
   animation: animate-preloader 1.5s linear infinite;
-} */
+}
 
 @keyframes animate-preloader {
   0% {
