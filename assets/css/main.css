@@ -178,12 +178,12 @@ section {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: var(--color-secondary);
-  width: 44px;
-  height: 44px;
+  background: #000;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   transition: all 0.4s;
 }
@@ -515,7 +515,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -614,7 +614,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 9996;
   }
 }
@@ -1017,6 +1017,14 @@ section {
 
 .services .service-item:hover h3 {
   border-color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Gallery Carousel Section
+--------------------------------------------------------------*/
+#screenshotCarousel {
+  width: 50%;
+  margin: auto;
 }
 
 /*--------------------------------------------------------------
@@ -1861,7 +1869,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
+  background: #a12487;
   border: 0;
   padding: 14px 45px;
   color: #fff;
@@ -1870,7 +1878,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(0, 131, 116, 0.8);
+  background: #a1248790;
 }
 
 @keyframes animate-loading {
@@ -1928,7 +1936,7 @@ section {
   transition: 0.3s;
   color: #fff;
   /* background: rgba(255, 255, 255, 0.1); */
-  background: #000;
+  background: #a12487;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -1959,7 +1967,7 @@ section {
 
 @media (max-width: 640px) {
   .hero h2 {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .hero .btn-get-started,
@@ -2703,7 +2711,7 @@ section {
   display:flex;
   justify-content:center;
   align-items:center;
-  height: 250px;
+  height: 230px;
 }
 
 
@@ -2784,4 +2792,91 @@ section {
 .spades{
   transform:rotate(-20deg);
   margin-left:-50px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.steps-icon {
+  font-size: 44px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 360px) and (max-width: 767px)  {
+  #about, #stats-counter, #gallery, #pricing, #timeTable, #testimonials, #faq, #contact, #footer {
+    padding: 40px 15px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .header .logo h1 {
+    font-size: 22px;
+  }
+
+  .hero .btn-get-started {
+    padding: 15px 20px;
+  }
+
+  .cards-wrapper {
+    height: 325px;
+    margin-left: 50px;
+  }
+
+  .card {
+    height: 240px;
+    width: 160px;
+  }
+
+  .stats-item h4 strong {
+    font-size: 20px;
+  }
+
+  #screenshotCarousel {
+    width: 80%;
+  }
+
+  .faq .accordion-button {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px)  {
+  .cards-wrapper {
+    height: 325px;
+  }
+
+  .hand {
+    height: 270px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 990px) {
+  .contact .info-container {
+    border-radius: 10px;
+  }
+
+  .contact .php-email-form {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .step-counter {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 575px) {
+  .stats-counter .stats-item i {
+    font-size: 30px;
+  }
+
+  .stats-item h4 strong {
+    font-size: 17px;
+  }
 }
