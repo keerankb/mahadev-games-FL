@@ -954,6 +954,11 @@ section {
   padding: 60px 0;
 }
 
+.services .game-chart-table,
+.services .game-pricing-table {
+  width: 85%;
+}
+
 .services .service-item {
   padding: 40px;
   background: #fff;
@@ -2040,6 +2045,10 @@ section {
   color: #fff;
 }
 
+.hero .hero-banner-logo {
+  animation-iteration-count: infinite;
+}
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -2705,6 +2714,12 @@ section {
   color: #fff;
 }
 
+.spin_wheel {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
 
 
 
@@ -2802,6 +2817,7 @@ section {
   bottom: 20px;
   right: 20px;
   z-index: 99999;
+  animation-iteration-count: infinite;
 }
 
 .steps-icon {
@@ -2895,6 +2911,7 @@ section {
 
   .about-us-text-wrapper {
     margin-top: 0;
+    text-align: justify;
   }
 }
 
